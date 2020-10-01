@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap');
+
+// VARIABLES
+$transition-time: 0.3s;
+
+// GLOBAL
+*, p, h1, h2, h3, h4, a{
+    font-family: 'PT Sans';
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}

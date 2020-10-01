@@ -1,0 +1,125 @@
+.footer{
+    border-top: 1px solid #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-div{
+        background-color: white;
+        padding: 10px;
+        margin-top: -22px;
+
+        img{
+            width: 80px;
+        }
+    }
+    .footer-div{
+        width: 1000px;
+        display: flex;   
+        justify-content: center;
+        margin-top: 50px;
+
+        .footer-subdiv{
+            h2{
+                margin-bottom: 40px;
+                font-size: 20px;
+            }
+            p{
+                line-height: 2;
+                font-size: 14px;
+            }
+            &:nth-child(1){
+                width: 25%;
+
+                p{
+                    display: inline;
+                    margin-right: 50px;
+                    cursor: pointer;
+                    color: #555555;
+                    transition: 0.15s;
+
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 30%;
+
+                div{
+                    border-bottom: 1px solid #262626;
+
+                    input{
+                        padding: 10px;
+                        font-size: 14px;
+                        width: 70%;
+                    }
+                    button{
+                        width: 23%;
+                        padding: 10px;
+                        background-color: white;
+                        font-size: 14px;
+                        cursor: pointer;
+                        transition: 0.2s;
+                        float: right;
+
+                        &:hover{
+                            background-color: #F6F6F6;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                width: 25%;
+
+                h2, div{
+                    margin-left: 55%;
+                }
+                div p{
+                    color: #555;
+                    cursor: pointer;
+                    transition: 0.15s;
+
+                    svg{
+                        font-size: 20px;
+                        margin-bottom: -5px;
+                        border-radius: 10px;
+                    }
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 1023px){
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0;
+            width: 100%;
+
+            .footer-subdiv{
+                width: 100% !important;
+                text-align: center;
+
+                p, h2, div{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin: 50px 0 30px 0 !important;
+                }
+                &:nth-child(1) p{
+                    margin: 0 15px !important;
+                }
+                &:nth-child(2) div{
+                    width: 85%;
+                    margin: 0 auto !important;
+                }
+            }
+        }
+    }
+    .info-p{
+        margin: 60px;
+        font-size: 14px;
+        text-align: center;
+    }
+}

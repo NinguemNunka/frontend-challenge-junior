@@ -1,0 +1,99 @@
+.slideshow{
+    width: 100%;
+    height: 92vh;
+
+    div{
+        height: 70%;
+        background-color: #272727;
+
+        div{
+            height: 100%;
+        }
+        .loading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            top: 0;
+            height: 110%;
+            background-color: white;
+            opacity: 0.10;
+            color: black;
+            padding: 0 20px;
+            transition: 0.1s;
+
+            &:hover{
+                opacity: 0.15;
+            }
+        }
+        .swiper-button-prev{
+            left: 0;
+        }
+        .swiper-button-next{
+            right: 0;
+        }
+    }
+    .navhelper{
+        height: 30%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        img{
+            margin: 0 auto;
+        }
+        button{
+            background-position: center center;
+            background-size: auto 100%;
+            background-color: #fff;
+            height: 130px;
+            width: 130px;
+            min-width: 130px;
+            margin: 15px;
+            border-radius: 100px;
+            transition: 0.15s;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        width: auto !important;
+
+        div{
+            height: 80%;
+        }
+        .navhelper{
+            height: 20%;
+
+            button{
+                height: 85px;
+                width: 85px;
+                min-width: 85px;
+            }
+        }
+    }
+    @media screen and (max-width: 680px) {
+        div{
+            .swiper-button-prev, .swiper-button-next{
+                display: none;
+            }
+        }
+        .navhelper{
+            overflow: scroll;
+            justify-content: start;
+
+            div{
+                background-color: rgba(255, 255, 255, 0);
+                min-width: 1px;
+            }
+        }
+    }
+}

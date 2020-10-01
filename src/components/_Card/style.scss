@@ -1,0 +1,28 @@
+.card{
+    border-radius: 3px;
+    overflow: hidden;
+
+    .card-image{
+        background-color: #272727;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+
+        &:hover{
+            background-size: 108%;
+        }
+    }
+    .card-content{
+        background-color: #171717;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px 30px 10px;
+        color: #F6F6F6;
+        
+        p{
+            margin-top: 10px;
+        }
+    }
+}
