@@ -23,9 +23,8 @@ const img_task = () => {
         .pipe(dest('dist/imgs'))
 }
 
-const svg_task = () => {
-    return src('src/imgs/*.svg')
-        .pipe(svgmin())
+const copy_favicon = () => {
+    return src('src/imgs/*.ico')
         .pipe(dest('dist/imgs'))
 }
 
@@ -45,7 +44,7 @@ const js_task = () => {
 
 exports.html_task = html_task
 exports.img_task = img_task
-exports.svg_task = svg_task
+exports.copy_favicon = copy_favicon
 exports.sass_task = sass_task
 exports.js_task = js_task
-exports.default = parallel(html_task, img_task, svg_task, sass_task, js_task)
+exports.default = parallel(html_task, img_task, copy_favicon, sass_task, js_task)
