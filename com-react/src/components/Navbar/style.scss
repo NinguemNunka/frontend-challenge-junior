@@ -5,6 +5,33 @@
     display: flex;
     justify-content: center;
 
+    .mobile-menu{
+        z-index: 10;
+        left: 0;
+        width: 0px;
+        transition: 0.15s linear;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        background-color: white;
+        box-shadow: 0px 0px 10px gray;
+
+        p{
+            margin: 25px 30px;
+            font-weight: bold;
+            cursor: pointer;
+            color: lighten(black, 50%);
+            transition: 0.2s;
+
+            &:first-child{
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        p:hover{
+            color: black !important;
+        }
+    }
     .navbar-div{
         width: 1024px;
         display: flex;

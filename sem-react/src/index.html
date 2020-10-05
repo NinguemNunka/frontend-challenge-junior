@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="imgs/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Challenge Júnior</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css" /> 
+	<!-- Awesome Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="navbar">
+            <div class="navbar-div">
+                <div class="img-div">
+                    <img src="imgs/logo.png" alt="logo" />
+                </div>
+                <div class="navbar-buttons">
+                    <button>MENU</button>
+                    <button>MENU</button>
+                    <button>MENU</button>
+                    <button>MENU</button>
+                    <button>MENU</button>
+                </div>
+                <div>
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-user-circle-o"></i>
+                    <i class="fa fa-shopping-basket"></i>
+                    <i class="fa fa-bars" id="mobileMenuIcon"></i>
+                </div>
+            </div>
+		</div>
+
+		<div class="slideshow">
+            <div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img 
+							alt="img0" 
+							src="https://picsum.photos/1920/1080?random=1" />
+						</div>
+						<div class="swiper-slide">
+							<img 
+							alt="img1" 
+							src="https://picsum.photos/1920/1080?random=2" />
+						</div>
+						<div class="swiper-slide">
+							<img 
+							alt="img2" 
+							src="https://picsum.photos/1920/1080?random=3" />
+						</div>
+						<div class="swiper-slide">
+							<img 
+							alt="img3" 
+							src="https://picsum.photos/1920/1080?random=4" />
+						</div>
+						<div class="swiper-slide">
+							<img 
+							alt="img4" 
+							src="https://picsum.photos/1920/1080?random=5" />
+						</div>
+						<div class="swiper-slide">
+							<img 
+							alt="img5" 
+							src="https://picsum.photos/1920/1080?random=6" />
+						</div>
+					</div>
+					<button class="swiper-button-prev" id="btn-prev" onclick="slideChange(0)"></button>
+					<button class="swiper-button-next" id="btn-next" onclick="slideChange(1)"></button>
+                </div>
+            </div>
+            <div class="navhelper">
+                <div></div>
+				<button style="background-image: url(https://picsum.photos/1920/1080?random=1)"></button>
+				<button style="background-image: url(https://picsum.photos/1920/1080?random=2)"></button>
+				<button style="background-image: url(https://picsum.photos/1920/1080?random=3)"></button>
+				<button style="background-image: url(https://picsum.photos/1920/1080?random=4)"></button>
+				<button style="background-image: url(https://picsum.photos/1920/1080?random=5)"></button>
+				<button style="background-image: url(https://picsum.photos/1920/1080?random=6)"></button>
+                <div></div>
+            </div>
+		</div>
+		
+        <div class="content1">
+            <div class="content1-div">
+                <div class="content1-subdiv">
+                    <p>Lorem ipsum lorem dolor</p>
+                    <h1>
+                        Lorem ipsum<br/>
+                        dolor sit amet
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelererisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p>
+                </div>
+
+                <div class="content1-subdiv">
+					<div class="card" style="width: 300px">
+						<div 
+						class="card-image" 
+						style="height: 309px; background-image: url(https://picsum.photos/300/309/)">
+						</div>
+						
+						<div class="card-content">
+							<strong>Título 1</strong>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempo.</p>
+						</div>
+					</div>
+                </div>
+
+                <div class="content1-subdiv">
+					<div class="card" style="width: 300px">
+						<div 
+						class="card-image" 
+						style="height: 160px; background-image: url(https://picsum.photos/300/160/)">
+						</div>
+						
+						<div class="card-content">
+							<strong>Título 2</strong>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempo.</p>
+						</div>
+					</div>
+					<div class="card" style="width: 300px">
+						<div 
+						class="card-image" 
+						style="height: 308px; background-image: url(https://picsum.photos/300/308/)">
+						</div>
+						
+						<div class="card-content">
+							<strong>Título 3</strong>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempo.</p>
+						</div>
+					</div>
+                </div>
+            </div>
+		</div>
+		
+        <div class="content2">
+            <div class="content2-div">
+				<div class="card" style="width: 240px">
+					<div 
+					class="card-image" 
+					style="height: 325px; background-image: url(https://picsum.photos/240/325/)">
+					</div>
+					
+					<div class="card-content" style="display: none">
+					</div>
+				</div>
+
+                <div class="text-div">
+                    <p>Lorem ipsum lorem dolor</p>
+                    <h1>Lorem ipsum<br/>dolor sit amet</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidudunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p>
+                    <button>Call-to-action</button>
+                </div>
+
+				<div class="card" style="width: 355px">
+					<div 
+					class="card-image" 
+					style="height: 240px; background-image: url(https://picsum.photos/355/240/)">
+					</div>
+					
+					<div class="card-content" style="display: none">
+					</div>
+				</div>
+            </div>
+		</div>
+		
+        <div class="content3">
+            <div class="content3-div">
+				<div class="card" style="width: 300px">
+					<div 
+					class="card-image" 
+					style="height: 300px; background-image: url(https://picsum.photos/300/300?random=1)">
+					</div>
+					
+					<div class="card-content" style="display: none">
+					</div>
+				</div>
+
+                <div>
+                    <h1>@vndaecommerce</h1>
+                    <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p></div>
+				</div>
+				
+				<div class="card" style="width: 300px">
+					<div 
+					class="card-image" 
+					style="height: 300px; background-image: url(https://picsum.photos/300/300?random=2)">
+					</div>
+					
+					<div class="card-content" style="display: none">
+					</div>
+				</div>
+            </div>
+		</div>
+		
+        <div class="footer">
+            <div class="logo-div">
+                <img src="imgs/logo.png" alt="logo" />
+            </div>
+
+            <div class="footer-div">
+                <div class="footer-subdiv">
+                    <h2>MENU</h2>
+                    <div>
+                        <p>Submenu</p>
+                        <p>Submenu</p>
+                        <br/>
+                        <p>Submenu</p>
+                        <p>Submenu</p>
+                    </div>
+                </div>
+
+                <div class="footer-subdiv">
+                    <h2>MENU</h2>
+                    <div>
+                        <input name="email" id="email" type="email" placeholder="Email" />
+                        <button type="submit">ENVIAR</button>
+                    </div>
+                </div>
+
+                <div class="footer-subdiv">
+                    <h2>MENU</h2>
+                    <div>
+                        <p><i class="fa fa-instagram"></i> Submenu</p>
+                        <p><i class="fa fa-facebook-square"></i> Submenu</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="info-p">@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+        </div>
+	</div>
+	
+	<!-- JS -->
+	<script src="js/script.js"></script>
+	<!-- Swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		})
+	</script>
+</body>
+</html>

@@ -7,7 +7,6 @@ import './style.scss'
 
 function Navbar() {
     const [isMobile, setIsMobile] = useState(false)
-    const [mobileMenu, setMobileMenu] = useState(false)
     
     useEffect(() => {
         window.innerWidth < 1024 ? setIsMobile(true) : setIsMobile(false)
@@ -31,8 +30,7 @@ function Navbar() {
                     <BsPeopleCircle />
                     <MdShoppingBasket />
                     { isMobile && 
-                        <AiOutlineMenu
-                        onClick={() => setMobileMenu(!mobileMenu)} /> 
+                        <AiOutlineMenu /> 
                     }
                 </div>
             </div>
